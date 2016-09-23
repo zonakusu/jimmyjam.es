@@ -11,7 +11,7 @@ var webpackConfig = require('./webpack.config.js')[environment];
 
 var port = $.util.env.port || 9000;
 var src = 'src/';
-var dist = 'dist/';
+var dist = 'docs/';
 
 var autoprefixerBrowsers = [
     'ie >= 9',
@@ -28,15 +28,15 @@ var autoprefixerBrowsers = [
 gulp.task('sprites', function () {
     var spriteOutput;
 
-    spriteOutput = gulp.src('./dist/css/*.css')
+    spriteOutput = gulp.src('./docs/css/*.css')
         .pipe($.spriteGenerator({
-            baseUrl: './dist/static/images/**/',
+            baseUrl: './docs/static/images/**/',
             spriteSheetName: "sprite.png",
-            spriteSheetPath: "./dist/static/image"
+            spriteSheetPath: "./docs/static/image"
         }));
 
-    spriteOutput.css.pipe(gulp.dest("./dist/css"));
-    spriteOutput.img.pipe(gulp.dest("./dist/static/images"));
+    spriteOutput.css.pipe(gulp.dest("./docs/css"));
+    spriteOutput.img.pipe(gulp.dest("./docs/static/images"));
 });
 
 gulp.task('scripts', function () {
