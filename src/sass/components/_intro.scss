@@ -1,0 +1,22 @@
+.intro {
+    margin-top: $baseline * 3;
+
+    @include shift(6);
+    @include span-columns(5);
+
+    p {
+        line-height: $baseline;
+        margin-bottom: $baseline / 2;
+    }
+
+    @include resp_mobile {
+        @include shift(1);
+        @include span-columns(10);
+
+        p {
+            margin-bottom: $baseline_mobile;
+
+            @include fontsize(1);
+        }
+    }
+}

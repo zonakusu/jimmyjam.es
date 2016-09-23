@@ -1,0 +1,153 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button, a {
+  outline: none; }
+
+body {
+  font-size: 1.1vw;
+  background-color: #F2F2F2;
+  font-family: "Europa"; }
+  @media (min-width: 0px) and (max-width: 736px) {
+    body {
+      font-size: 1.7vw; } }
+
+main {
+  min-height: 80vh;
+  width: 100vw;
+  float: left; }
+
+header {
+  margin-top: 3.3vw;
+  margin-left: 8.33333vw; }
+  header h1 {
+    font-weight: 700;
+    letter-spacing: -0.5vw;
+    margin-bottom: 0.825vw;
+    font-size: 7.53951vw;
+    line-height: 8.25vw; }
+    @media (min-width: 0px) and (max-width: 736px) {
+      header h1 {
+        font-size: 11.65197vw;
+        line-height: 12.75vw; } }
+  @media (min-width: 0px) and (max-width: 736px) {
+    header p {
+      font-size: 1.77984vw;
+      line-height: 3.3vw; } }
+  @media (min-width: 0px) and (max-width: 736px) and (min-width: 0px) and (max-width: 736px) {
+    header p {
+      font-size: 2.75066vw;
+      line-height: 5.1vw; } }
+
+.intro {
+  margin-top: 4.95vw;
+  margin-left: 50vw;
+  width: 41.66667vw;
+  float: left; }
+  .intro p {
+    line-height: 1.65vw;
+    margin-bottom: 0.825vw; }
+  @media (min-width: 0px) and (max-width: 736px) {
+    .intro {
+      margin-left: 8.33333vw;
+      width: 83.33333vw;
+      float: left; }
+      .intro p {
+        margin-bottom: 2.55vw;
+        font-size: 1.77984vw;
+        line-height: 3.3vw; } }
+    @media (min-width: 0px) and (max-width: 736px) and (min-width: 0px) and (max-width: 736px) {
+      .intro p {
+        font-size: 2.75066vw;
+        line-height: 5.1vw; } }
+
+h2 {
+  color: #DE1B1B;
+  margin-bottom: 0.825vw; }
+  @media (min-width: 0px) and (max-width: 736px) {
+    h2 {
+      margin-bottom: 2.55vw;
+      font-size: 1.77984vw;
+      line-height: 3.3vw; } }
+  @media (min-width: 0px) and (max-width: 736px) and (min-width: 0px) and (max-width: 736px) {
+    h2 {
+      font-size: 2.75066vw;
+      line-height: 5.1vw; } }
+
+footer {
+  position: relative;
+  height: 20vh;
+  overflow: hidden;
+  width: 100vw;
+  float: left; }
+  footer div {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    margin-left: 8.33333vw;
+    width: 83.33333vw;
+    float: left; }
+    footer div a {
+      color: #757575;
+      text-decoration: none;
+      font-size: 0.861vw;
+      margin-right: 1.65vw; }
+    @media (min-width: 0px) and (max-width: 736px) {
+      footer div {
+        position: relative;
+        z-index: 1;
+        text-align: right; }
+        footer div a {
+          color: #F2F2F2;
+          font-size: 1.77984vw;
+          line-height: 3.3vw; } }
+    @media (min-width: 0px) and (max-width: 736px) and (min-width: 0px) and (max-width: 736px) {
+      footer div a {
+        font-size: 2.75066vw;
+        line-height: 5.1vw; } }
+  footer:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150vw;
+    background-color: #DE1B1B;
+    height: 20vh;
+    -webkit-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+    -webkit-transform-origin: top right;
+        -ms-transform-origin: top right;
+            transform-origin: top right; }

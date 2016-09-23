@@ -1,0 +1,19 @@
+header {
+    margin-top: $baseline * 2;
+
+    @include shift(1);
+
+    h1 {
+        font-weight: 700;
+        letter-spacing: -0.5vw;
+        margin-bottom: $baseline / 2;
+
+        @include fontsize(4);
+    }
+
+    p {
+        @include resp_mobile {
+            @include fontsize(1);
+        }
+    }
+}

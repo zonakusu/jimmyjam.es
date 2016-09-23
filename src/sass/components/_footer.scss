@@ -1,0 +1,48 @@
+footer {
+    position: relative;
+    height: 20vh;
+    overflow: hidden;
+
+    div {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        @include shift(1);
+        @include span-columns(10);
+
+        a {
+            color: $colorLowVisibility;
+            text-decoration: none;
+            font-size: 0.861vw;
+            margin-right: $baseline;
+        }
+
+        @include resp_mobile {
+            position: relative;
+            z-index: 1;
+            text-align: right;
+
+            a {
+                color: $colorMain;
+
+                @include fontsize(1);
+            }
+        }
+    }
+
+    &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 150vw;
+        background-color: $colorAccent;
+        height: 20vh;
+        transform: rotate(-10deg);
+        transform-origin: top right;
+    }
+
+    @include span-columns(12);
+}

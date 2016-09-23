@@ -1,0 +1,28 @@
+@mixin fontsize($times, $clearLineheight: false) {
+    $gr: 1.61803398875;
+    $size: 1;
+
+    @if $times > 0 {
+        @for $i from 1 through $times {
+            $size: $size * $gr;
+        }
+    }
+
+    font-size: $size * $fontsize;
+
+    @if $clearLineheight {
+        line-height: $size * $fontsize;
+    } @else {
+        line-height: (1 + $times) * $baseline;
+    }
+
+    @include resp_mobile {
+        font-size: $size * $fontsize_mobile;
+
+        @if $clearLineheight {
+            line-height: $size * $fontsize_mobile;
+        } @else {
+            line-height: (1 + $times) * $baseline_mobile;
+        }
+    }
+}

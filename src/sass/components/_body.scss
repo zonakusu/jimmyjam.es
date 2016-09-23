@@ -1,0 +1,9 @@
+body {
+    font-size: $fontsize;
+    background-color: $colorMain;
+    font-family: $typeFamily;
+
+    @include resp_mobile {
+        font-size: $fontsize_mobile;
+    }
+}
