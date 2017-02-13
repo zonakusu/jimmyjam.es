@@ -1,8 +1,0 @@
-@mixin span-columns($columns) {
-    width: $columns * $column-width;
-    float: left;
-}
-
-@mixin shift($columns) {
-    margin-left: $columns * $column-width;
-}
