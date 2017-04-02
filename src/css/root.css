@@ -1,0 +1,20 @@
+:root {
+    --fontsize: 16px;
+    --baseline: calc(var(--fontsize) * 1.5);
+    --grey: #636363;
+}
+
+html, body {
+    height: 100%;
+}
+
+@keyframes show-init {
+    0%   {
+        opacity: 0;
+        transform: translateY(1.5rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

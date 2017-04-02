@@ -1,0 +1,12 @@
+main {
+    padding: calc(var(--baseline) * 7) calc(100vw / 12) calc(var(--baseline) * 4);
+    margin-left: calc(100vw / 24 * 8);
+
+    & > h2 {
+        opacity: 0;
+        animation: show-init 1000ms;
+        animation-timing-function: cubic-bezier(.27,.26,.17,.92);
+        animation-delay: 1500ms;
+        animation-fill-mode: forwards;
+    }
+}

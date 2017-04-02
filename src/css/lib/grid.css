@@ -1,0 +1,15 @@
+.grid {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+}
+
+@define-mixin span-columns $columns, $minus {
+    width: calc(100vw / 24 * $columns);
+}
+
+@define-mixin shift-columns $columns {
+    left: calc(100vw / 24 * $columns);
+}

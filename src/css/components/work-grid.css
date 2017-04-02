@@ -1,0 +1,120 @@
+.work-grid {
+    @mixin span-columns 12;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & .work-grid__item {
+        position: relative;
+        /*background-color: #fdfdfd;*/
+        margin-bottom: 1.5rem;
+        overflow: hidden;
+        opacity: 0;
+
+        animation: show-init 1000ms;
+        animation-timing-function: cubic-bezier(.27,.26,.17,.92);
+        animation-delay: 1550ms;
+        animation-fill-mode: forwards;
+
+        & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: filter 200ms ease;
+            filter: grayscale(100%);
+
+        }
+
+        &__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            transform: translateY(-100%);
+            transition: transform 150ms ease;
+            will-change: transform;
+
+            &__title {
+                position: absolute;
+                bottom: 0;
+                color: #fff;
+                line-height: 6rem;
+                margin-bottom: 0;
+                margin-left: 1.5rem;
+                transform: translateY(100%);
+                transition: transform 150ms ease, opacity 150ms ease;
+                transition-delay: 100ms;
+                will-change: opacity;
+                opacity: 0;
+                font-size: 1.618rem;
+                letter-spacing: -0.04rem;
+                font-weight: bold;
+
+                & small {
+                    font-size: 1rem;
+                    letter-spacing: 0;
+                    font-weight: 100;
+                }
+            }
+        }
+
+        &:hover {
+            & .work-grid__item__overlay {
+                transform: translateY(0);
+
+                & span {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            & img {
+                filter: grayscale(50%);
+            }
+        }
+    }
+
+    &__vertical-spanner {
+        width: calc(calc(100vw / 24 * 6) - 1.5rem);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        max-height: 42rem;
+
+        & img {
+            max-height: calc(19.5rem + calc(1.5rem / 2));
+        }
+
+        & a:last-of-type {
+            margin-bottom: 0;
+
+            & img {
+                animation-delay: 1660ms;
+            }
+        }
+    }
+
+    & &__portrait {
+        @mixin span-columns 6;
+
+        height: 42rem;
+
+        & img {
+            animation-delay: 1650ms;
+        }
+    }
+
+    & &__landscape {
+        @mixin span-columns 12;
+
+        height: 19.5rem;
+
+        & img {
+            animation-delay: 1700ms;
+        }
+    }
+}

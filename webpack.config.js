@@ -19,9 +19,9 @@ module.exports = [
         resolve: {
             modules: ['./src/js', 'node_modules'],
             extensions: ['.js', '.json'],
-            // alias: {
-            //     handlebars: 'handlebars/dist/handlebars.min.js'
-            // }
+            alias: {
+                handlebars: 'handlebars/dist/handlebars.min.js'
+            }
         },
 
         context: resolve(__dirname, 'src/js'),

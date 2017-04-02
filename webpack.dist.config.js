@@ -23,6 +23,7 @@ module.exports =
 
         devtool: "source-map",
 
+        // Todo: For dist version, create ES6 and ES5 version
         module: {
             loaders: [
                 {

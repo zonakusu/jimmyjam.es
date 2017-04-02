@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "bezier-easing": "^2.0.3",
+    "gsap": "^1.19.1",
     "handlebars": "^4.0.6",
     "ismobilejs": "^0.4.0"
   }

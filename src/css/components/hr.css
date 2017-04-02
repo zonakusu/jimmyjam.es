@@ -1,0 +1,5 @@
+hr {
+    width: 100%;
+    border: 1px solid #fff;
+    margin-bottom: calc(1.5rem - 2px);
+}

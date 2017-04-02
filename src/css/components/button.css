@@ -1,0 +1,9 @@
+.button {
+    display: inline-block;
+    line-height: calc(3rem - 2px);
+    border: 1px solid var(--grey);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    min-width: calc(100vw / 12);
+}
